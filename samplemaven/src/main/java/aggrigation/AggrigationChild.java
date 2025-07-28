@@ -2,14 +2,14 @@ package aggrigation;
 
 public class AggrigationChild {
 	String city,state;
-	AggrigationParent ref;
-	public AggrigationChild(String city,String state,AggrigationParent ref) {
+	AggrigationParent studentdetails;
+	public AggrigationChild(String city,String state,AggrigationParent studentdetails) {
 		this.city=city;
 		this.state=state;
-		this.ref=ref;
+		this.studentdetails=studentdetails;
 	}
 	public void display() {
-		System.out.println("Name:"+ref.name+" "+ref.roll_no+" "+ref.address);
+		System.out.println("Name:"+studentdetails.name+" "+studentdetails.roll_no+" "+studentdetails.address);
 		System.out.println(city+" "+state);
 		
 	}
